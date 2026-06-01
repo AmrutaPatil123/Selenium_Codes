@@ -9,27 +9,6 @@ public class SwagLabs_Application {
 
         WebDriver driver = new EdgeDriver();
         driver.get("https://www.saucedemo.com/");
-        driver.manage().window().maximize();
-        Thread.sleep(1000);
-
-        WebElement userNameField=driver.findElement(By.id("user-name"));
-        userNameField.sendKeys("standard_user");
-        Thread.sleep(1000);
-
-        WebElement passwordField=driver.findElement(By.id("password"));
-        passwordField.sendKeys("secret_sauce");
-        Thread.sleep(2000);
-
-/*
-       String Username= "standard_user";
-       String Password = "secret_sauce";
-
-       WebElement userNameField=driver.findElement(By.id("user_name"));
-       userNameField.sendKeys(Username);
-       WebElement passwordField=driver.findElement(By.id("password"));
-       passwordField.sendKeys(Password);
-*/
-
         driver.findElement(By.name("login-button")).click();
         Thread.sleep(2000);
 
