@@ -43,6 +43,5 @@ public class GoogleTest {
         driver.close(); //close current browser window
         driver.quit();// close all the browser window
 
-
     }
 }
